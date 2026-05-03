@@ -1,0 +1,87 @@
+# Class and Object
+--> Program
+class Student:
+    def display(self):
+        print("This is a student class")
+
+s1 = Student()   
+s1.display()
+
+#Constructor
+It Automatically called when an object of a class is created.
+--> Program
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        print(self.name, self.age)
+
+s1 = Student("Poojitha", 20)
+s1.show()
+
+# Instance Variables & Methods
+Instance : Separate data for objects.If you change one object, it does not affect another object.
+--> Program
+class Car:
+    def __init__(self, brand):
+        self.brand = brand   # instance variable
+
+    def display(self):       # instance method
+        print("Brand:", self.brand)
+
+c1 = Car("Toyota")
+c1.display()
+
+# Class variables
+A class variable is a variable whose value is same for all objects.
+--> Program
+class Student:
+    college = "ABC College"   # class variable
+
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Vinay")
+s2 = Student("Jitesh")
+
+print(s1.college)
+print(s2.college)
+
+
+#Types of Methods 
+1. Instance Method :- An instance method is a method that belongs to an object and uses self to access that object’s data.
+--> Program:
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):   # instance method
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+
+s1 = Student("Poojitha", 90)
+s1.display()
+
+2.Class Method:- A class method is a method that works with class variables and uses cls to refer to the class.
+-->Program:
+class Student:
+    college = "ABC College"   # class variable
+
+    @classmethod #Special decorator
+    def show_college(cls):
+        print("College:", cls.college)
+
+Student.show_college()
+
+3. Static method :
+A static method is a method that does not use object (self) or class (cls).It is just like a normal function inside a class.
+-->Program
+class Demo:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+print(Demo.add(5, 3))
