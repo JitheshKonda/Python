@@ -1,0 +1,28 @@
+#Factorial using Function:
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    return fact
+print("Factorial:", factorial(5))
+
+#Lambda Function
+add = lambda a, b: a + b
+print(add(5, 3))
+
+#Variable-length Args
+def student_marks(name, *marks):
+    print("Name:", name)
+    print("Total Marks:", sum(marks))
+
+student_marks("Jitesh", 80, 90, 75)
+
+# Reverse String Without Slicing
+def reverse_string(s):
+    rev = ""
+    for ch in s:
+        rev = ch + rev
+    return rev
+
+print(reverse_string("hello"))
+
