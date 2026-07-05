@@ -1,0 +1,3 @@
+text = "DataScience2025"
+letters_only = ''.join([char for char in text if char.isalpha()])
+print(letters_only)
