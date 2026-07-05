@@ -1,0 +1,9 @@
+import numpy as np
+num = [10, 15, 20, 25, 30, 35]
+
+#NumPy part
+arr = np.array(num)
+mean = arr.mean()
+std_dev = arr.std()
+print("Mean:",mean)
+print("Std Dev : " , std_dev)
