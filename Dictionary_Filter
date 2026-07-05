@@ -1,0 +1,3 @@
+marks = {"Alice" : 85 , "Bob" : 96, "Charlie":92, "David":70, "James":65}
+passed = [name for name, score in marks.items() if score > 70]
+print(passed)
