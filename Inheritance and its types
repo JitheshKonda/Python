@@ -1,0 +1,73 @@
+class Animal:
+   def show(self):
+      print("Animal make different sounds")
+class Dog(Animal):
+    def show(self):
+        print("Dog barks!","Cat Meow, Meow!")
+
+d = Dog()
+d.show()
+
+#Single Inheritance
+class Parent:
+    def show(self):
+        print("Parent Class")
+class Child(Parent):
+    pass
+c = Child()
+c.show()
+
+
+#Multilevel inheritance
+class DemoA:
+    def displayA(self):
+        print("Class-A Method")
+class DemoB(DemoA):
+    def displayB(self):
+        print("Class-B Method")
+class DemoC(DemoB):
+    def displayC(self):
+        print("Class-C Method")
+obj = DemoC()
+obj.displayC()
+
+#Hierarchical Inheritance
+class Vehicle:
+    def show(self):
+        print("Vehicle Class")
+class Car(Vehicle):
+    pass
+class Bike(Vehicle):
+    pass
+
+c2 = Car()
+c2.show()
+
+#Multiple Inheritance
+class A:
+    def show(self):
+        print("Class A")
+class B:
+    def show(self):
+        print("Class B")
+class C(A,B):
+    pass
+obj = C()
+obj.show()
+
+#Hybrid Inheritance
+class A:
+    def show(self):
+        print("A")
+class B(A):
+    pass
+class C(A):
+    pass
+class D(B,C):
+    pass
+D().show()
+
+ 
+
+
+
