@@ -1,0 +1,5 @@
+def test():
+    value = 100
+    print(value)
+
+test()
