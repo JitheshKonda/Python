@@ -1,0 +1,3 @@
+data = [1, 2, 3, 4, 5, 5, 2, 1]
+dup = [x for x in set(data) if data.count(x)>1]
+print(dup)
