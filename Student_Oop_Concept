@@ -1,0 +1,25 @@
+class Student:
+
+    def __init__(self, name, marks):
+       self.name = name
+       self.marks = marks
+
+    def get_grade(self):
+        if self.marks >= 100:
+           print("Grade: A")
+        elif self.marks >= 90:
+            print("Grade: B")
+        elif self.marks >= 85:
+            print("Grade: C")
+        elif self.marks >= 75:
+            print("Grade: D")
+        elif self.marks >= 65:
+            print("Grade: E")
+        else:
+            print("Grade: F")
+
+name = input()
+marks = int(input())
+
+student = Student(name, marks)
+print("Name:", student.name)
