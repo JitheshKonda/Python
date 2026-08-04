@@ -1,0 +1,37 @@
+class Wallet:
+
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance
+
+    def add_money(self, amount):
+
+        if amount > 0:
+            self.__balance += amount
+            print("Money added successfully")
+        else:
+            print("Invalid amount")
+
+    def spend_money(self, amount):
+
+        if amount <= 0:
+            print("Invalid amount")
+
+        elif amount > self.__balance:
+            print("Insufficient balance")
+
+        else:
+            self.__balance -= amount
+            print("Payment successful")
+
+    def get_balance(self):
+        return self.__balance
+
+
+wallet = Wallet("Poojitha", 5000)
+
+wallet.add_money(2000)
+wallet.spend_money(1500)
+
+print("Owner:", wallet.owner)
+print("Balance:", wallet.get_balance())
