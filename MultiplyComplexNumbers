@@ -1,0 +1,10 @@
+real1 = float(input("Enter the real part of the first complex number: "))
+imag1 = float(input("Enter the imaginary part of the first complex number: "))
+real2 = float(input("Enter the real part of the second complex number: "))
+imag2 = float(input("Enter the imaginary part of the second complex number: "))
+complex1 = complex(real1, imag1)
+complex2 = complex(real2, imag2)
+addition_result = complex1 + complex2
+multiplication_result = complex1 * complex2
+print("The addition of {} and {} is {}".format(complex1, complex2, addition_result))
+print("The multiplication of {} and {} is {}".format(complex1, complex2, multiplication_result))
