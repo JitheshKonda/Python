@@ -1,0 +1,15 @@
+my_list = [10, 20, 30, 40, 50]
+
+# Adding an element to the end of the list using the append method
+my_list.append(60)
+print("After addition:", my_list)
+
+# Inserting an element at a specific position in the list
+# Example: Insert 25 at index 2 (third position)
+my_list.insert(2, 25)
+print("After insertion:", my_list)
+
+# Slicing the list to get a sublist
+# Example: Get a slice from index 1 to 4 (excluding index 4)
+sliced_list = my_list[1:4]
+print("Sliced list (index 1 to 3):", sliced_list)
