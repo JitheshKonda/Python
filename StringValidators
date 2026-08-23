@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    svg = input()
+print(any(c.isalnum() for c in svg))
+print(any(c.isalpha() for c in svg))
+print(any(c.isdigit() for c in svg))
+print(any(c.islower() for c in svg))
+print(any(c.isupper() for c in svg))
