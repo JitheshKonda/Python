@@ -1,0 +1,7 @@
+# a set cannot have duplicate values
+s = {"Java", "Programming"}
+print(s)
+
+# values of a set cannot be changed
+s[1] = "Hello"
+print(s)
