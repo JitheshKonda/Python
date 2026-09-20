@@ -1,0 +1,14 @@
+n, m = map(int, input().split())
+
+# Top pattern
+for i in range(1, n, 2):
+    pattern = (".|." * i)
+    print(pattern.center(m, '-'))
+
+# Center line
+print("WELCOME".center(m, '-'))
+
+# Bottom pattern
+for i in range(n - 2, 0, -2):
+    pattern = (".|." * i)
+    print(pattern.center(m, '-'))
