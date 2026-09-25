@@ -1,0 +1,15 @@
+if __name__ == "__main__":
+    n = int(input())
+    arrow_width = n * 2 - 1
+    h_spacing = arrow_width + 2
+    arrow = [("H" * i).center(arrow_width) for i in range(1, n * 2, 2)]
+    print("\n".join(arrow))
+    arrow.reverse()
+    arrow = [a.rjust(arrow_width * 2 + h_spacing) for a in arrow]
+    trunk = ("H" * n).center(arrow_width)
+    gap = " " * h_spacing
+    bar_width = n * 5
+    print((trunk + gap + trunk + "\n") * (n + 1), end="")
+    print((("H" * bar_width).rjust(bar_width + n // 2) + "\n") * ((n + 1) // 2), end="")
+    print((trunk + gap + trunk + "\n") * (n + 1), end="")
+    print("\n".join(arrow))
